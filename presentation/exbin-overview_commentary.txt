@@ -1,4 +1,4 @@
-Welcome to presentation about the ExBin project.
+Welcome to overview presentation about the ExBin project.
 
 == What It Is
 
@@ -7,6 +7,11 @@ ExBin project is an non-commercial initiative to bring evolution in general data
 Name of the project reflects two basic aspects this project:
 
 == Why Binary?
+
+- Text formats can’t handle complex data properly
+- Ideal syntax doesn’t exist
+- Meaning described by language is ambiguous
+- One language at the time
 
 // Second aspect is to use binary data representation to:
 

@@ -1,3 +1,9 @@
+Structure:
+
+What is it?
+Why is it?
+How is done?
+
 Universal Data Protocol
 Data Processing Framework
 Programming Language
