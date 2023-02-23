@@ -2,31 +2,54 @@ Welcome to overview presentation about the ExBin project.
 
 == What It Is
 
-ExBin project is an non-commercial initiative to bring evolution in general data storing and processing by providing set of unified methods to access and convert any structured data. 
+ExBin project is an non-commercial initiative to bring evolution in general data storing and processing by providing set of unified methods and tools to access and convert any structured data. 
 
-Name of the project reflects two basic aspects this project:
+Project is currently in early alpha stage with partial prototype implementation.
+
+Name of the project reflects two primary aspects this project:
 
 == Why Binary?
 
 * Support for complex data structures
 * Can handle compressed / multimedia data
+
+Use of binary encoding allows to process structured text data as well as multimedia data like images, audio and video data, or complex compressed, cached or encrypted data and allow to access data structure.  
+
 * Deep type definition
+
+As needed it's possible to convert data to access specific segment or different form of data and process separate well defined chunks on various depths.   
+
 * Can use syntax / language of your choice
+
+Text descriptions are typically included in definition instead of directly with data which allows to support multiple languages if desired. Optionally data can be also shown and editable using case specific or general text syntax.
 
 == Why Extensible?
 
-* Enables evolution
 * Adaptable to new use case
+* Modular approach
+
+Second aspect is ability to extend or to adapt project for particular needs. Project is developed as a set of separate modules, where you can use only subset of functionality and combine it with your own implementation when preferred for your particular case. 
+
 * 3rd parties can colaborate
+* Enables evolution
+
+Project API's are defined so that additional modules and libraries could be developed by third party independently on the project itself. Project itself attempts to use structured data in a way to enable possibility to convert it to new versions in the future.  
 
 == Why Bother at All?
 
 * Better structured and documented binary data
 * Machine processable binary data
+
+Initial focus of the project is to provide way to define meaning of structured binary data which should simplify processing such data both automatically and on-demand as needed.
+
 * Bring advantages of mark-up languages to binary world
 * More flexibility
 
+Big inspiration for this project are XML and other markup languages and project aims to bring similar capabilities to more general data processing to introduce similar flexibility when working with binary files. 
+
 == Technology Steps
+
+Project is consists of multiple subprojects which are build on top of each other and connected.
 
 * Universal Data Protocol
 * Data Processing Framework
@@ -34,56 +57,59 @@ Name of the project reflects two basic aspects this project:
 * Database System
 * Mesh Repository
 
+Subprojects are: Communication data protocol and file format, data processing framework, programming or scripting language, database system and mesh repository of data services
+
 == Universal Data Protocol
 
-Multilayer architecture
-Unified block-tree structure
-Build-in and custom data types
-Data operations
-Catalogs of definitions
-Support for automatic conversion / compatibility handling
+* Multilayer architecture
+* Unified block-tree structure
+* Build-in and custom data types
+* Data operations
+* Catalogs of definitions
+* Support for automatic conversion / compatibility handling
 
 == Data Processing Framework
 
-Library or OS service
-Local or remote method calls
-Combine multiple operations into complex ones
-Computation / execution nodes
-On-demand and automatic data conversion
+* Library or OS service
+* Local or remote method calls
+* Combine multiple operations into complex ones
+* Computation / execution nodes
+* On-demand and automatic data conversion
 
 == Programming Language
 
-Primary data-flow paradigm
-Stored using protocol
-Multiple / evolving syntaxes possible
-Conversion and refactoring transformations
-Low and high level programming
+* Primary data-flow paradigm
+* Stored using protocol
+* Multiple / evolving syntaxes possible
+* Conversion and refactoring transformations
+* Low and high level programming
 
 == Database System
 
-Focused on binary data first
-Using protocol for storage and queries
-Configurable / optionally relational
-Integrated transformation framework
+* Focused on binary data first
+* Using protocol for storage and queries
+* Configurable / optionally relational
+* Integrated transformation framework
 
 == Mesh Repository
 
-Data sources and computation services
-Knowledge base
-Internet services
-Metadata and ontology definitions
+* Data sources and computation services
+* Knowledge base
+* Internet services
+* Metadata and ontology definitions
 
 == Tools
 
-Protocol parsing and service API libraries
-Protocol data editor
-Data type catalog editor
-Transformation framework management
-Mesh browser
-Example and demo applications
+* Protocol parsing and service API libraries
+* Protocol data editor
+* Data type catalog editor
+* Transformation framework management
+* Mesh browser
+* Example and demo applications
 
 == More Information
 
-Website: exbin.org
-Discord: TODO
-GitHub: github.com/exbin
+* Website: exbin.org
+* GitHub: github.com/exbin
+* Youtube: youtube.com/@exbinproject9287
+* Discord: discord.gg/kJyeRdM5S3
