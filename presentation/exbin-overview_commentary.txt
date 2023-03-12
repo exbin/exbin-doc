@@ -49,7 +49,7 @@ Big inspiration for this project are XML and other markup languages and project 
 
 == Technology Steps
 
-Project is consists of multiple subprojects which are build on top of each other and connected.
+Project consists of multiple subprojects which are build on top of each other or interconnected.
 
 * Universal Data Protocol
 * Data Processing Framework
@@ -61,28 +61,57 @@ Subprojects are: Communication data protocol and file format, data processing fr
 
 == Universal Data Protocol
 
+Core project is binary data protocol which allows to declare specific meaning to binary data blobs.
+
 * Multilayer architecture
+
+With bottom-up approach protocol defines levels how to represent data with more specific details on each layers build on top of lower ones. When needed application can support only subset of layers up to particular level. 
+
 * Unified block-tree structure
 * Build-in and custom data types
+
+Lowest level specifies tree structure of binary data blocks, next level introduces data types, block type definitions and declarations.
+
 * Data operations
-* Catalogs of definitions
 * Support for automatic conversion / compatibility handling
+
+Higher levels define data operations which allows to convert between different types of data blocks and can be also performed automatically for various tasks.
+
+* Catalogs of definitions
+
+Definitions of types and operations can be either stored in file or in independenly stored catalogs.
 
 == Data Processing Framework
 
 * Library or OS service
 * Local or remote method calls
+
+To execute operations with data encoded using the protocol, either library or service can be used. Service can also be executed on remote machine.
+
 * Combine multiple operations into complex ones
 * Computation / execution nodes
+
+More complex operations can constructed from simpler ones as needed or executed in parallel or on multiple computation nodes when available.
+
 * On-demand and automatic data conversion
+
+This should allow to perform various data transformation to convert data in desired form.
 
 == Programming Language
 
 * Primary data-flow paradigm
 * Stored using protocol
+
+Using the protocol as foundation, aim here is to be able to define algorithms in similar flow-based fashion to data operations, but it should be not limited to single paradigm.
+
 * Multiple / evolving syntaxes possible
 * Conversion and refactoring transformations
+
+As syntax is secondary, it should be possible to change it when needed. Algorithms represented using protocol tree structure can be converted and transformed using data processing framework. 
+
 * Low and high level programming
+
+
 
 == Database System
 
