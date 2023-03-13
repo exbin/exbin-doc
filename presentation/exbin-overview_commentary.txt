@@ -1,4 +1,4 @@
-Welcome to overview presentation about the ExBin project.
+Welcome to overview presentation of the ExBin project.
 
 == What It Is
 
@@ -102,43 +102,71 @@ This should allow to perform various data transformation to convert data in desi
 * Primary data-flow paradigm
 * Stored using protocol
 
-Using the protocol as foundation, aim here is to be able to define algorithms in similar flow-based fashion to data operations, but it should be not limited to single paradigm.
+Using the protocol as foundation, aim here is to be able to define algorithms in similar fashion to data operations, but it should be not limited to single paradigm. Best approach seems to be data-flow paradigm, where basic building block is data operation which processes input data to output data.
 
 * Multiple / evolving syntaxes possible
 * Conversion and refactoring transformations
 
-As syntax is secondary, it should be possible to change it when needed. Algorithms represented using protocol tree structure can be converted and transformed using data processing framework. 
+As syntax is secondary, it should be possible to have multiple syntaxes suitable for particular purposes and change syntax when needed. Algorithms represented using protocol tree structure can be converted and transformed using data processing framework. 
 
 * Low and high level programming
 
-
+Data operation is should be also sufficiently abstract concept, that it can specify low level CPU instruction as well as high level cloud service calls or similar tasks. 
 
 == Database System
 
 * Focused on binary data first
+
+Next subproject aims to provide storage solution with primary focus on binary data, combining protocol and processing framework as well as using programming language for query language. 
+
 * Using protocol for storage and queries
-* Configurable / optionally relational
 * Integrated transformation framework
+
+Where applicable, protocol can be used for data store structures as well as request/response communication while transformation framework can be included to provide additional data processing capability.
+
+* Configurable / optionally relational
+
+Similar to other subprojects, preferred approach is to have modular architecture with layers providing additional functionality when needed, starting with simple key-value store while support for relational or graph database and clustering can be added optionally.
 
 == Mesh Repository
 
 * Data sources and computation services
+
+It should be also possible to setup multiple database and data processing services to mesh together to combine their resources.
+
 * Knowledge base
 * Internet services
+
+Such repository of services could support knowledge records and provide browsing capability similar to internet services.
+
 * Metadata and ontology definitions
+
+Some services could be dedicated to provide metadata about other services or construct ontology definitions and classifications.
 
 == Tools
 
 * Protocol parsing and service API libraries
 * Protocol data editor
+
+Initial focus is to create prototype implementation for protocol parsing and editor tool with textual and visual access to the data written in Java.
+
 * Data type catalog editor
 * Transformation framework management
+
+Support for catalog of definition and data transformation framework should be adressed next and subprojects depending on this functionality should follow later. 
+
 * Mesh browser
 * Example and demo applications
 
+For concept validation various example data types and some demo applications should be also implemented.
+
 == More Information
+
+For more information you can visit project's website or some other of listed resources. 
 
 * Website: exbin.org
 * GitHub: github.com/exbin
 * Youtube: youtube.com/@exbinproject9287
 * Discord: discord.gg/kJyeRdM5S3
+
+Thank you for watching and have a great day.
