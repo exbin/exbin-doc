@@ -1,41 +1,41 @@
 Welcome to overview presentation of the ExBin project.
 
-== What It Is
+== 1: What It Is
 
 ExBin project is an non-commercial initiative to bring evolution in general data storing and processing by providing set of unified methods and tools to access and convert any structured data. 
 
 Project is currently in early alpha stage with partial prototype implementation.
 
-Name of the project reflects two primary aspects this project:
+Name of the project reflects two primary aspects of this project:
 
-== Why Binary?
+== 2: Why Binary?
 
 * Support for complex data structures
 * Can handle compressed / multimedia data
 
-Use of binary encoding allows to process structured text data as well as multimedia data like images, audio and video data, or complex compressed, cached or encrypted data and allow to access data structure.  
+Use of binary encoding allows to process structured text data as well as multimedia data like images, audio and video data, or compressed, cached or encrypted data.  
 
 * Deep type definition
 
-As needed it's possible to convert data to access specific segment or different form of data and process separate well defined chunks on various depths.   
+With the proper definition of the type, it's possible to convert data to different form or to access specific segment or section on the desired depth level.   
 
 * Can use syntax / language of your choice
 
-Text descriptions are typically included in definition instead of directly with data which allows to support multiple languages if desired. Optionally data can be also shown and editable using case specific or general text syntax.
+To show data in text form, specific or general syntax can be utilized. Text description of binary data is typically not carried with data itself, but instead is included in the definition - this allows to support multiple languages.
 
-== Why Extensible?
+== 3: Why Extensible?
 
 * Adaptable to new use case
 * Modular approach
 
-Second aspect is ability to extend or to adapt project for particular needs. Project is developed as a set of separate modules, where you can use only subset of functionality and combine it with your own implementation when preferred for your particular case. 
+Second aspect is ability to extend or to adapt project for particular purpose. Project is developed as a set of separate modules, where you can use only subset of functionality and combine it with your own implementation when preferred for your particular case. 
 
 * 3rd parties can colaborate
 * Enables evolution
 
-Project API's are defined so that additional modules and libraries could be developed by third party independently on the project itself. Project itself attempts to use structured data in a way to enable possibility to convert it to new versions in the future.  
+Project API's are defined so that additional modules and libraries could be developed by third party independently on the project itself. Project attempts to use structured data in a way to enable possibility to convert it to new versions in the future.  
 
-== Why Bother at All?
+== 4: Why Bother at All?
 
 * Better structured and documented binary data
 * Machine processable binary data
@@ -45,9 +45,9 @@ Initial focus of the project is to provide way to define meaning of structured b
 * Bring advantages of mark-up languages to binary world
 * More flexibility
 
-Big inspiration for this project are XML and other markup languages and project aims to bring similar capabilities to more general data processing to introduce similar flexibility when working with binary files. 
+Big inspiration for this project are XML and other markup languages. Project aims to bring similar capabilities to more general data processing and to introduce similar flexibility when working with binary files. 
 
-== Technology Steps
+== 5: Technology Steps
 
 Project consists of multiple subprojects which are build on top of each other or interconnected.
 
@@ -57,15 +57,15 @@ Project consists of multiple subprojects which are build on top of each other or
 * Database System
 * Mesh Repository
 
-Subprojects are: Communication data protocol and file format, data processing framework, programming or scripting language, database system and mesh repository of data services
+Subprojects are: Communication data protocol and file format, data processing framework, programming or scripting language, database system and mesh repository of data services.
 
-== Universal Data Protocol
+== 6: Universal Data Protocol
 
-Core project is binary data protocol which allows to declare specific meaning to binary data blobs.
+Core functionality is the binary data protocol which allows to declare specific meaning to general data blobs.
 
 * Multilayer architecture
 
-With bottom-up approach protocol defines levels how to represent data with more specific details on each layers build on top of lower ones. When needed application can support only subset of layers up to particular level. 
+With bottom-up approach, protocol defines levels how to represent data with more specifying details on each layer build on top of lower ones. When needed, application can support only subset of layers up to particular level. 
 
 * Unified block-tree structure
 * Build-in and custom data types
@@ -79,56 +79,56 @@ Higher levels define data operations which allows to convert between different t
 
 * Catalogs of definitions
 
-Definitions of types and operations can be either stored in file or in independenly stored catalogs.
+Definitions of types and operations can be either stored in file or in independently stored catalogs.
 
-== Data Processing Framework
+== 7: Data Processing Framework
 
 * Library or OS service
 * Local or remote method calls
 
-To execute operations with data encoded using the protocol, either library or service can be used. Service can also be executed on remote machine.
+To execute operations with data encoded using the protocol, either library, local or remote service can be used, allowing to process data using multiple operations similar to multimedia frameworks.
 
 * Combine multiple operations into complex ones
 * Computation / execution nodes
 
-More complex operations can constructed from simpler ones as needed or executed in parallel or on multiple computation nodes when available.
+More complex operations can be constructed from simpler ones as needed or executed in parallel or on multiple computation nodes when available.
 
 * On-demand and automatic data conversion
 
-This should allow to perform various data transformation to convert data in desired form.
+This should allow to perform various data transformations to convert data into desired form and format.
 
-== Programming Language
+== 8: Programming Language
 
 * Primary data-flow paradigm
 * Stored using protocol
 
-Using the protocol as foundation, aim here is to be able to define algorithms in similar fashion to data operations, but it should be not limited to single paradigm. Best approach seems to be data-flow paradigm, where basic building block is data operation which processes input data to output data.
+Using the protocol as foundation, aim here is to be able to define algorithms in similar fashion to data operations. Initially data-flow paradigm will be used, where basic building block is data operation which processes input data to output data, but algorithms should not be limited to single paradigm.
 
 * Multiple / evolving syntaxes possible
 * Conversion and refactoring transformations
 
-As syntax is secondary, it should be possible to have multiple syntaxes suitable for particular purposes and change syntax when needed. Algorithms represented using protocol tree structure can be converted and transformed using data processing framework. 
+As the syntax is secondary to data structure, it should be possible to have multiple syntaxes suitable for particular purposes and change syntax when needed. Algorithms represented using protocol tree structure can be converted and transformed using data processing framework. 
 
 * Low and high level programming
 
-Data operation is should be also sufficiently abstract concept, that it can specify low level CPU instruction as well as high level cloud service calls or similar tasks. 
+Abstract concept of data operation should be sufficiently general, that it can specify low level CPU instructions as well as high level cloud service calls or similar tasks. 
 
-== Database System
+== 9: Database System
 
 * Focused on binary data first
+* Using protocol for storage and queries
 
 Next subproject aims to provide storage solution with primary focus on binary data, combining protocol and processing framework as well as using programming language for query language. 
 
-* Using protocol for storage and queries
 * Integrated transformation framework
 
-Where applicable, protocol can be used for data store structures as well as request/response communication while transformation framework can be included to provide additional data processing capability.
+Where applicable, the protocol can be used for data store structure as well as request/response communication, while the transformation framework can be included to provide additional data processing capability.
 
 * Configurable / optionally relational
 
 Similar to other subprojects, preferred approach is to have modular architecture with layers providing additional functionality when needed, starting with simple key-value store while support for relational or graph database and clustering can be added optionally.
 
-== Mesh Repository
+== 10: Mesh Repository
 
 * Data sources and computation services
 
@@ -137,30 +137,30 @@ It should be also possible to setup multiple database and data processing servic
 * Knowledge base
 * Internet services
 
-Such repository of services could support knowledge records and provide browsing capability similar to internet services.
+Such repository of services could support various knowledge records and provide browsing capability similar to internet services.
 
 * Metadata and ontology definitions
 
 Some services could be dedicated to provide metadata about other services or construct ontology definitions and classifications.
 
-== Tools
+== 11: Tools
 
 * Protocol parsing and service API libraries
 * Protocol data editor
 
-Initial focus is to create prototype implementation for protocol parsing and editor tool with textual and visual access to the data written in Java.
+As for applications and tools, initial focus is to create prototype implementation for protocol parsing and editor tool with textual and visual access to the data.
 
 * Data type catalog editor
 * Transformation framework management
 
-Support for catalog of definition and data transformation framework should be adressed next and subprojects depending on this functionality should follow later. 
+Support for catalog of definitions and data transformation framework should be addressed next and subprojects depending on this functionality should follow later. 
 
 * Mesh browser
 * Example and demo applications
 
 For concept validation various example data types and some demo applications should be also implemented.
 
-== More Information
+== 12: More Information
 
 For more information you can visit project's website or some other of listed resources. 
 
