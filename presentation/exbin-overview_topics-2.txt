@@ -1,0 +1,31 @@
+flowla
+
+ExBin:
+what / why / how
+
+What is ExBin:
+- Unified architecture to represent and process data in extensible binary tree structure
+
+- Representation of data with focus on binary and extensible
+- General binary data format/protocol + catalog of definitions + related tools
+- 
+
+Why is it done?
+- Text formats can't handle complex data properly (images, audio/video, compression, encryption)
+- Syntax preference depends on taste and best fitness for particular use case
+- Language is not precise enough
+- Text is typically limited to single language
+- Typical binary formats has often fixed structure and it's hard to identify content of the file
+
+How is it done?
+- Minimalist approach
+- Tree of blobs data structure
+- Definition of evolvable abstract concepts
+- Development by multiple teams
+- Isolated interfaces
+
+What is done?
+- Data storage and comm protocol
+- Catalog of definitions
+- Transformation framework
+- Programming and scripting language
